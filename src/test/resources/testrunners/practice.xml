@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="REGRESSION" verbose="1" thread-count="4" parallel="tests">
+
+	<test name="OpenCartPage Test">
+		<parameter name="url" value="https://naveenautomationlabs.com/opencart/"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+
+		<classes>
+			<class name="assignmentpractice.OpenCartTest"></class>
+		</classes>
+	</test>
+	<test name="LoginPage Test">
+		<parameter name="url" value="https://naveenautomationlabs.com/opencart/index.php?route=account/login"></parameter>
+		<parameter name="browser" value="firefox"></parameter>
+
+		<classes>
+
+			<class name="assignmentpractice.LoginPageTest"></class>
+
+		</classes>
+
+	</test>
+	<test name="RegisterPage Test">
+		<parameter name="url" value="https://naveenautomationlabs.com/opencart/index.php?route=account/register"></parameter>
+		<parameter name="browser" value="edge"></parameter>
+
+		<classes>
+
+			<class name="assignmentpractice.RegisterPageTest"></class>
+
+		</classes>
+
+	</test>
+	<test name="ForgottenPassword Test">
+		<parameter name="url" value="https://naveenautomationlabs.com/opencart/index.php?route=account/forgotten"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+
+		<classes>
+
+			<class name="assignmentpractice.ForgotPasswordTest"></class>
+
+		</classes>
+
+	</test>
+	
+	
+
+
+</suite>
